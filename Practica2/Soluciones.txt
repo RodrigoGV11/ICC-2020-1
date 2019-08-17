@@ -1,0 +1,10 @@
+Linea 9: se escribió mal el tipo de valor booleaN. Lo cambié por boolean
+Linea 9: se asigno a un boolean un valor fuera de su rango. Lo cambié por true
+Linea 10: se le asigno a un byte un valor fuera de su rango. Lo cambié por 127
+Linea 11: se le asigno a un short un balor fuera de su rango. Lo cambié por -32768
+Linea 14: se escribió un identificador no existente Discriminante. Lo cambié por discriminante
+Linea 14: se pedia una coversion de double a long. Cambié long por double
+Linea 17: se escribió mal el tipo de valor Char. Lo cambié por char
+Linea 18: se escribio un identificador no existente ch. Lo cambié por ch1
+Linea 18: se escribió "w" y no se puede convertir a char. Lo cambié por 'w'
+Error de ejecucion linea 19: no se puede dividir entre 0, cambié (a - 3) por (a - 2)
