@@ -1,0 +1,3 @@
+En PrePost.java se imprime dos veces el numero 17 porque System.out.println(--x) y System.out.println(x--) son la misma orden que se aplica a System.out.println(x)
+
+En Operadores.java el primer resultado es 7 debido a que el resultado se muestra en enteros int, y el segundo resultado que es 7.8 es mas exacto porque se muestra en numeros reales double
