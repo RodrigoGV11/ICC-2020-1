@@ -57,14 +57,36 @@ public class Triangulo {
 	 * @return el tipo de este triángulo
 	 */
 	public int tipo() {
-		if (a.distancia(b) == b.distancia(c) == c.distancia(a)) {
+		if (a.distancia(b) == b.distancia(c) && b.distancia(c) == c.distancia(a)) {
 			return EQUILATERO;
 		}
-		if (a.distancia(b) == b.distancia(c) != c.distancia(a) || a.distancia(b) != b.distancia(c) == c.distancia(a) || a.distancia(b) == c.distancia(a) != b.distancia(c)) {
+		if (a.distancia(b) == b.distancia(c) && b.distancia(c) != c.distancia(a) || a.distancia(b) != b.distancia(c) && b.distancia(c) == c.distancia(a) || a.distancia(b) == c.distancia(a) && a.distancia(b) != b.distancia(c)) {
 			return ISOCELES;
 		}
-		if (a.distancia(b) != b.distancia(c) != c.distancia(a)) {
-			return ESCALENO;
-		}
+		return ESCALENO;
+	}
+
+	/**
+	 * Regresa el punto a
+	 * @return el punto a
+	 */
+	public Punto getA() {
+		return a;
+	}
+
+	/**
+	 * Regresa el punto b
+	 * @return el punto b
+	 */
+	public Punto getB() {
+		return b;
+	}
+
+	/**
+	 * Regresa el punto c
+	 * @return el punto c
+	 */
+	public Punto getC() {
+		return c;
 	}
 }
