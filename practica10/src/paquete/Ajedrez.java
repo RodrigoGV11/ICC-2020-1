@@ -23,9 +23,9 @@ public class Ajedrez extends PApplet {
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
 				if ((i + j) % 2 == 0) {
-					fill(0);
-				} else {
 					fill(255);
+				} else {
+					fill(0);
 				}
 				rect(j * (ancho / 8), i * (alto / 8), (ancho / 8), (alto / 8));
 			}
